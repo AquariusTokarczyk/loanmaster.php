@@ -1,0 +1,115 @@
+:root {
+  --bakgrund: #0f1115;
+  --yta: #151922;
+  --text: #e8e8e8;
+  --muted: #b9b9b9;
+  --kant: #2a3140;
+  --fel: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bakgrund);
+  color: var(--text);
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.kort {
+  background: var(--yta);
+  border: 1px solid var(--kant);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav a {
+  padding: 8px 10px;
+  border: 1px solid var(--kant);
+  border-radius: 10px;
+  background: #101521;
+}
+
+.h1 {
+  font-size: 22px;
+  margin: 8px 0 14px 0;
+}
+
+.falt {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--kant);
+  background: #0f1420;
+  color: var(--text);
+}
+
+textarea {
+  min-height: 90px;
+}
+
+.knapp {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--kant);
+  background: #1d2740;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.knapp:hover {
+  filter: brightness(1.1);
+}
+
+.fel {
+  margin-top: 6px;
+  color: var(--fel);
+  font-size: 14px;
+}
+
+.tabell {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabell th, .tabell td {
+  border-bottom: 1px solid var(--kant);
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
